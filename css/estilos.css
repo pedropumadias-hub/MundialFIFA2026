@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #002B5B;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1{
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.banner{
+    background-color: #0A4D9E;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+.banner img{
+    width: 180px;
+    margin-bottom: 15px;
+}
+
+.banner h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.banner p{
+    font-size: 18px;
+}
+
+section{
+    padding: 40px;
+    text-align: center;
+}
+
+h2{
+    color: #002B5B;
+    margin-bottom: 15px;
+}
+
+.imagen-principal{
+    width: 70%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.trofeo{
+    width: 250px;
+    margin: 20px auto;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    background-color: white;
+    width: 60%;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+footer{
+    background-color: #002B5B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.anfitriones h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #002B5B;
+    margin-bottom: 10px;
+}
+.caja p{
+    font-size: 18px;
+}
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.caja{
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bandera{
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.estadio{
+    width: 30%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
