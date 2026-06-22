@@ -647,3 +647,325 @@ footer{
         flex-direction: column;
     }
 }
+
+/* SECCION PARTIDOS */
+
+:root {
+  
+    --color-fondo: #F4F4F4; 
+    --color-blanco: #FFFFFF; 
+    --color-azul: #002B5B;   
+    --color-dorado: #D4AF37; 
+    
+    --texto-oscuro: #1A1A1A;
+    --texto-gris: #888888;
+    --texto-claro: #A0A0A0;
+    --linea-ganador: #00B16A; 
+    --color-banner: #00AEEF;  
+    --borde-suave: #E0E0E0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-centrado {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+.seccion-superior-filtros {
+    background-color: var(--color-blanco);
+    padding: 3rem 0 2rem 0;
+}
+
+.titulo-calendario {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--texto-oscuro);
+    margin: 0 0 1.5rem 0;
+}
+
+.selector-ubicacion {
+    margin-bottom: 2rem;
+}
+
+.etiqueta-donde {
+    font-size: 0.85rem;
+    color: var(--texto-gris);
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+}
+
+.desplegable-pais {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.pais-seleccionado {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--texto-oscuro);
+}
+
+.texto-hora-local {
+    font-size: 0.8rem;
+    color: var(--texto-gris);
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+
+.botones-filtro {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-filtro {
+    background-color: var(--color-blanco);
+    border: 1px solid #D0D0D0;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+    color: var(--texto-oscuro);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 80px;
+    transition: all 0.2s ease;
+}
+
+.btn-filtro.activo {
+    border-color: var(--texto-oscuro);
+    box-shadow: 0 0 0 1px var(--texto-oscuro);
+    font-weight: 600;
+}
+
+.btn-filtro:hover {
+    border-color: var(--texto-oscuro);
+}
+
+.simulacion-logo {
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -0.5px;
+}
+
+
+.linea-divisoria {
+    height: 1px;
+    background-color: var(--borde-suave);
+    width: 100%;
+}
+
+.seccion-plataformas {
+    background-color: var(--color-fondo);
+    padding: 2rem 0 0.5rem 0;
+}
+
+.titulo-watch {
+    font-size: 0.75rem;
+    color: var(--texto-gris);
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 0.5px;
+}
+
+.grid-plataformas {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.item-plataforma {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.caja-plataforma {
+    width: 75px;
+    height: 75px;
+    background-color: var(--color-blanco);
+    border: 1px solid var(--borde-suave);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.enlace-externo {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    color: var(--texto-gris);
+    transition: color 0.2s ease;
+}
+
+.enlace-externo:hover {
+    color: var(--texto-oscuro);
+}
+
+.nombre-plataforma {
+    font-size: 0.8rem;
+    color: var(--texto-gris);
+}
+
+
+.seccion-partidos {
+    max-width: 1000px;
+    margin: 1.5rem auto 2rem auto;
+    padding: 0 1rem;
+}
+
+.encabezado-fecha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.encabezado-fecha:first-of-type {
+    margin-top: 0;
+}
+
+.encabezado-fecha h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--texto-oscuro);
+    margin: 0;
+}
+
+.enlace-grupos {
+    color: var(--texto-oscuro);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.enlace-grupos:hover {
+    color: var(--color-dorado);
+}
+
+.tarjeta-partido {
+    background-color: var(--color-blanco);
+    padding: 1.25rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    border-radius: 4px;
+}
+
+.fila-marcador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.equipo {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.05rem;
+    color: var(--texto-oscuro);
+    width: 300px;
+}
+
+.equipo.local {
+    justify-content: flex-end;
+}
+
+.equipo.visitante {
+    justify-content: flex-start;
+}
+
+.bandera {
+    font-size: 1.2rem;
+}
+
+.resultado {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+
+.goles {
+    font-size: 1.7rem;
+    font-weight: 600;
+    width: 30px;
+    text-align: center;
+}
+
+.goles.ganador {
+    color: var(--texto-oscuro);
+    border-bottom: 3px solid var(--linea-ganador);
+    padding-bottom: 2px;
+}
+
+.goles.perdedor {
+    color: var(--texto-claro);
+    font-weight: 400;
+}
+
+.estado {
+    font-size: 0.8rem;
+    color: var(--texto-gris);
+    letter-spacing: 0.5px;
+}
+
+.detalles {
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--texto-gris);
+    margin-top: 0.5rem;
+}
+
+
+.banner-adidas {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+    background-color: var(--color-banner);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: transform 0.2s ease;
+}
+
+.banner-adidas:hover {
+    transform: translateY(-2px);
+}
+
+.contenido-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    height: 100px;
+    color: var(--color-blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.texto-banner {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
